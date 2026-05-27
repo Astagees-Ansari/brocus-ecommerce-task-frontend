@@ -1,0 +1,133 @@
+/* src/Pages/ProductDetail/ProductDetail.css */
+
+.product-detail-page {
+    padding: 60px 0;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+
+/* ================================= */
+/* IMAGE */
+/* ================================= */
+
+.product-image-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-image-box img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* ================================= */
+/* DETAILS */
+/* ================================= */
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #222;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.price-box h3 {
+    color: #ff6b00;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.price-box span {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.stock {
+    color: green;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ================================= */
+/* BUTTONS */
+/* ================================= */
+
+.product-buttons {
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cart-btn,
+.buy-btn {
+    border: none !important;
+    height: 52px;
+    padding: 0 30px !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+}
+
+.cart-btn {
+    background: #222 !important;
+}
+
+.buy-btn {
+    background: #ff6b00 !important;
+}
+
+.buy-btn:hover {
+    background: #e65f00 !important;
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 991px) {
+
+    .product-details {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .product-details h1 {
+        font-size: 30px;
+    }
+
+    .price-box h3 {
+        font-size: 26px;
+    }
+
+    .product-buttons {
+        flex-direction: column;
+    }
+
+}

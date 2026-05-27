@@ -1,0 +1,143 @@
+/* src/AuthPages/LoginPage/LoginPage.css */
+
+.login-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+/* ======================================== */
+/* CARD */
+/* ======================================== */
+
+.login-card {
+    border: none !important;
+    border-radius: 22px !important;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+/* ======================================== */
+/* LOGO */
+/* ======================================== */
+
+.login-logo {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ff6b00;
+    margin-bottom: 12px;
+}
+
+/* ======================================== */
+/* HEADING */
+/* ======================================== */
+
+.login-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.login-heading p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* ======================================== */
+/* FORM */
+/* ======================================== */
+
+.form-label {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    color: #999;
+    z-index: 2;
+}
+
+.input-wrapper input {
+    height: 54px;
+    border-radius: 12px !important;
+    padding-left: 48px !important;
+    border: 1px solid #e5e5e5 !important;
+    font-size: 15px;
+}
+
+.input-wrapper input:focus {
+    box-shadow: none !important;
+    border-color: #ff6b00 !important;
+}
+
+/* ======================================== */
+/* BUTTON */
+/* ======================================== */
+
+.login-btn-main {
+    width: 100%;
+    height: 54px;
+    border: none !important;
+    border-radius: 12px !important;
+    background: #ff6b00 !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    margin-top: 10px;
+}
+
+.login-btn-main:hover {
+    background: #e65f00 !important;
+}
+
+/* ======================================== */
+/* REGISTER */
+/* ======================================== */
+
+.register-text {
+    text-align: center;
+    margin-top: 24px;
+    color: #666;
+    font-size: 15px;
+}
+
+.register-text a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* ======================================== */
+/* MOBILE FIRST */
+/* ======================================== */
+
+@media (max-width: 576px) {
+
+    .login-card {
+        padding: 10px;
+    }
+
+    .login-heading h2 {
+        font-size: 26px;
+    }
+
+    .login-logo {
+        font-size: 28px;
+    }
+
+}

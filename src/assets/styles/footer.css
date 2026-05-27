@@ -1,0 +1,126 @@
+/* src/Components/Footer.css */
+
+.footer-section {
+    background: #111111;
+    color: #ffffff;
+    padding: 60px 0 20px;
+    margin-top: 60px;
+}
+
+/* ===== LOGO ===== */
+
+.footer-logo {
+    color: #ff6b00;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* ===== TEXT ===== */
+
+.footer-text {
+    color: #cfcfcf;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* ===== TITLES ===== */
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* ===== LINKS ===== */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.footer-links li:hover {
+    color: #ff6b00;
+}
+
+/* ===== SOCIAL ===== */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icons span {
+    width: 40px;
+    height: 40px;
+    background: #1f1f1f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    background: #ff6b00;
+}
+
+/* ===== NEWSLETTER ===== */
+
+.newsletter-input {
+    margin-bottom: 14px;
+    height: 48px;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.subscribe-btn {
+    width: 100%;
+    height: 48px;
+    border: none !important;
+    border-radius: 10px !important;
+    background: #ff6b00 !important;
+    font-weight: 500 !important;
+}
+
+.subscribe-btn:hover {
+    background: #e65f00 !important;
+}
+
+/* ===== COPYRIGHT ===== */
+
+.footer-bottom {
+    border-top: 1px solid #2c2c2c;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+/* ================================================= */
+/* ================= MOBILE FIRST ================== */
+/* ================================================= */
+
+@media (max-width: 767px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+}

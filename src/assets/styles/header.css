@@ -1,0 +1,107 @@
+/* src/Components/Header.css */
+
+/* ===== GLOBAL ===== */
+
+.custom-navbar {
+    background: #ffffff;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== LOGO ===== */
+
+.logo {
+    font-size: 28px !important;
+    font-weight: 700;
+    color: #ff6b00 !important;
+    cursor: pointer;
+}
+
+/* ===== NAV LINKS ===== */
+
+.nav-links {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #222 !important;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6b00 !important;
+}
+
+.nav-link.active {
+    color: #ff6b00 !important;
+}
+
+/* ===== BUTTONS ===== */
+
+.header-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn {
+    border-radius: 8px !important;
+    padding: 8px 18px !important;
+    font-weight: 500 !important;
+}
+
+.signup-btn,
+.logout-btn {
+    background: #ff6b00 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 18px !important;
+    font-weight: 500 !important;
+}
+
+.signup-btn:hover,
+.logout-btn:hover {
+    background: #e65f00 !important;
+}
+
+/* ================================================= */
+/* ================= MOBILE FIRST ================== */
+/* ================================================= */
+
+@media (max-width: 991px) {
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .header-btns {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .login-btn,
+    .signup-btn,
+    .logout-btn {
+        width: 100%;
+    }
+}
+
+/* ================================================= */
+/* ================= LARGE SCREEN ================== */
+/* ================================================= */
+
+@media (min-width: 992px) {
+
+    .nav-links {
+        align-items: center;
+    }
+
+}
