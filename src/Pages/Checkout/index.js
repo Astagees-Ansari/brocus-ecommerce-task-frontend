@@ -1,8 +1,8 @@
 import React, {
     useEffect,
     useState,
+    useCallback,
 } from "react";
-
 import {
     Container,
     Row,
@@ -37,7 +37,7 @@ const Checkout = () => {
 
     // GET PRODUCT
 
-    const getProduct = async () => {
+    const getProduct = useCallback(async () => {
 
         try {
 
@@ -53,7 +53,8 @@ const Checkout = () => {
             console.log(error);
 
         }
-    };
+
+    }, [id]);
 
     useEffect(() => {
 
