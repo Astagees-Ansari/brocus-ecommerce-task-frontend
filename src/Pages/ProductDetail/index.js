@@ -38,9 +38,7 @@ const ProductDetail = () => {
         try {
 
             const response =
-                await axiosInstance.get(
-                    `/products/${id}`
-                );
+                await axiosInstance.get(`/products/${id}`);
 
             setProduct(response.data);
 
@@ -56,7 +54,7 @@ const ProductDetail = () => {
 
         getSingleProduct();
 
-    }, [id]);
+    }, [getSingleProduct]);
 
     const handleBuyNow = async () => {
 
