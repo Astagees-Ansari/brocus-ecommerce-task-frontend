@@ -56,7 +56,7 @@ const ProductDetail = () => {
 
         getSingleProduct();
 
-    }, []);
+    }, [id]);
 
     const handleBuyNow = async () => {
 

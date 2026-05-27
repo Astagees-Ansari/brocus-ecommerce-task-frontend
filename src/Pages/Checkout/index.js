@@ -59,7 +59,7 @@ const Checkout = () => {
 
         getProduct();
 
-    }, []);
+    }, [getProduct]);
 
     // HANDLE PURCHASE
 
