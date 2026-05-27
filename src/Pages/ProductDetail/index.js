@@ -1,8 +1,7 @@
-// src/Pages/ProductDetail/index.js
-
 import React, {
     useEffect,
     useState,
+    useCallback,
 } from "react";
 
 import {
@@ -34,7 +33,7 @@ const ProductDetail = () => {
 
     // GET SINGLE PRODUCT
 
-    const getSingleProduct = async () => {
+    const getSingleProduct = useCallback(async () => {
 
         try {
 
@@ -50,7 +49,8 @@ const ProductDetail = () => {
             console.log(error);
 
         }
-    };
+
+    }, [id]);
 
     useEffect(() => {
 
